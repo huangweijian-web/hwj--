@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 150px;
+				margin: 100px auto;
+			}
+			p{
+				background: #ccc;
+				text-align: center;
+				border:solid 1px black;
+				margin-top: -1px;
+				cursor: pointer;
+			}
+			p:hover{
+				background: white;
+			}
+			.box2{
+				display: none;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var box1 = document.getElementsByClassName("box1")[0];
+				var box2 = document.getElementsByClassName("box2")[0];
+				var op = document.getElementsByTagName("p");
+				box1.onmouseover = function(){
+					box2.style.display = "block";
+				}
+				box1.onmouseout = function(){
+					box2.style.display = "none";
+				}
+				for(var i = 1;i<op.length;i++){
+					op[i].onclick = function(){
+						op[0].innerHTML = this.innerHTML;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="box1">
+			<p>请选择游戏名称</p>
+			<div class="box2">
+				<p>英雄联盟</p>
+				<p>王者荣耀</p>
+				<p>绝地求生</p>
+				<p>魔兽世界</p>
+				<p>QQ农场</p>
+			</div>
+		</div>
+	</body>
+</html>

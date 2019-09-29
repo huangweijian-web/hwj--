@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//定义变量
+			//变量名 box
+			//var 关键字
+			//"张三" 变量的值
+			var box = "张三";
+			
+			var box1 ;
+			
+			//同时定义多个变量
+			var box2 = "张三",box3=10,box4="aaa";
+			console.log(box3);
+			
+			//typeof 返回这个变量的类型
+			
+			//1.数据类型："undefined"
+			console.log(typeof box1);
+			
+			//2.数据类型："object"
+			var box5 = null;
+			console.log(typeof box5);
+			
+			//3.数据类型："boolean"
+			var box6 = true;
+			console.log(typeof box6);
+			
+			//4.数据类型："Number "
+			var box7 = 20.5;
+			console.log(typeof box7);
+			
+			//5.数据类型："string "
+			var box8 = "hello word";
+			console.log(typeof box8);
+			
+			//6.NAN
+			console.log(0/0);
+			console.log("word"/0);
+			
+			// isNaN()函数
+			var box9 = 0/0;
+			console.log(isNaN(box9));
+			
+			//强制类型转换
+			//parseInt()      是把其它类型转换为整型；
+			var box10 = "word";
+			console.log(typeof parseInt(box10));//"number"
+			var box11 = 10.5 ;
+			console.log(parseInt(box11));//"10"
+			
+			//parseFloat()  是把其它类型转换为浮点型（小数）
+			console.log(parseFloat(box11));//"10.5"
+			
+			//四舍五入Math.round(78.566)
+			console.log(Math.round(box11));
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
